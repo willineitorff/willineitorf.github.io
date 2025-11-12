@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fidén y Asociados — Auditoría Interna y Capacitaciones</title>
+  <meta name="description" content="Fidén y Asociados — Consultoría en auditoría interna y capacitaciones en Guatemala." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">Fidén<span class="dot">.</span></div>
+        <div class="tag">Auditoría Interna · Consultoría · Capacitaciones</div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#capacitaciones">Capacitaciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="btn-link">Contacto</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Fidén y Asociados</h1>
+          <p class="lead">Consultoría en auditoría interna y programas de capacitación para empresas en Guatemala — soluciones prácticas, cumplimiento y mejora continua.</p>
+
+          <form class="search" onsubmit="event.preventDefault(); openModal();">
+            <input type="text" placeholder="¿Qué servicio buscas? (ej. auditoría de procesos, curso SOX...)" aria-label="Buscar servicio" id="searchInput">
+            <button type="submit">Buscar</button>
+          </form>
+
+          <div class="hero-features">
+            <div class="feature">
+              <strong>+15 años</strong>
+              <span>Experiencia en la región</span>
+            </div>
+            <div class="feature">
+              <strong>Equipo Certificado</strong>
+              <span>Auditores internos y consultores</span>
+            </div>
+            <div class="feature">
+              <strong>Soluciones a medida</strong>
+              <span>Industria, finanzas y servicios</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="card-brief">
+            <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Consultoría" />
+            <div class="card-body">
+              <h3>Servicios destacados</h3>
+              <ul>
+                <li>Auditoría interna integral</li>
+                <li>Evaluación de controles</li>
+                <li>Capacitaciones in-company</li>
+              </ul>
+              <a class="btn" href="#servicios">Ver servicios</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE SERVICIOS -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-sub">En Fidén y Asociados ofrecemos servicios orientados a mejorar el control interno, gestión de riesgos y desempeño operativo.</p>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-img" aria-hidden="true">AI</div>
+            <div class="card-content">
+              <h3>Auditoría Interna</h3>
+              <p>Evaluaciones de procesos, auditorías de cumplimiento y recomendaciones prácticas para mejorar controles.</p>
+              <a class="card-cta" href="#contacto">Solicitar auditoría</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" aria-hidden="true">EC</div>
+            <div class="card-content">
+              <h3>Evaluación de Controles</h3>
+              <p>Revisión y fortalecimiento de controles clave, diseño de controles remotos y pruebas de efectividad.</p>
+              <a class="card-cta" href="#contacto">Evaluar controles</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" aria-hidden="true">CP</div>
+            <div class="card-content">
+              <h3>Capacitaciones</h3>
+              <p>Formación en auditoría interna, gestión de riesgos, COBIT, SOX, y buenas prácticas contables.</p>
+              <a class="card-cta" href="#capacitaciones">Ver cursos</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img" aria-hidden="true">CM</div>
+            <div class="card-content">
+              <h3>Consultoría en Mejora</h3>
+              <p>Proyectos de mejora de procesos, eficiencia operativa e integración de sistemas.</p>
+              <a class="card-cta" href="#contacto">Consultar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAPACITACIONES -->
+    <section id="capacitaciones" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Capacitaciones próximas</h2>
+        <p class="section-sub">Cursos diseñados para equipos de auditoría, finanzas y operaciones.</p>
+
+        <div class="trainings-grid">
+          <div class="training">
+            <h4>Auditoría Interna Práctica — 2 días</h4>
+            <p>Enfoque práctico con casos reales y taller.</p>
+            <div class="meta">Lugar: Ciudad de Guatemala · Modalidad: Presencial / Online</div>
+            <a class="btn-small" href="#contacto">Inscribirme</a>
+          </div>
+
+          <div class="training">
+            <h4>COBIT & Gobernanza TI</h4>
+            <p>Framework y herramientas para gobernanza de TI.</p>
+            <div class="meta">Lugar: Virtual · Duración: 1 día</div>
+            <a class="btn-small" href="#contacto">Inscribirme</a>
+          </div>
+
+          <div class="training">
+            <h4>Gestión de Riesgos y Controles</h4>
+            <p>Identificación, evaluación y tratamiento de riesgos.</p>
+            <div class="meta">Lugar: Ciudad de Guatemala · Modalidad: Presencial</div>
+            <a class="btn-small" href="#contacto">Inscribirme</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">Sobre Fidén y Asociados</h2>
+          <p>Somos un equipo de consultores y auditores con experiencia en empresas del sector financiero, seguros y servicios en Guatemala y Centroamérica. Nuestra misión es dar soluciones prácticas que fortalezcan la gobernanza, control interno y capacidades del personal.</p>
+          <ul class="about-list">
+            <li>Servicios personalizados</li>
+            <li>Enfoque práctico y medible</li>
+            <li>Capacitaciones certificadas</li>
+          </ul>
+        </div>
+
+        <div class="team-card">
+          <h3>Contáctanos</h3>
+          <p>Correo: <a href="mailto:info@fidenyasociados.gt">info@fidenyasociados.gt</a></p>
+          <p>Tel: +502 1234 5678</p>
+          <p>Ubicación: Ciudad de Guatemala, Guatemala</p>
+          <a class="btn" href="#contacto">Enviar mensaje</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Contacto</h2>
+        <p class="section-sub">Escríbenos para cotizaciones, consultas o para programar una capacitación.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form" onsubmit="event.preventDefault(); showToast('Gracias — hemos recibido tu mensaje.');">
+            <label>
+              Nombre
+              <input type="text" required placeholder="Tu nombre">
+            </label>
+            <label>
+              Empresa
+              <input type="text" placeholder="Nombre de la empresa">
+            </label>
+            <label>
+              Correo
+              <input type="email" required placeholder="correo@empresa.com">
+            </label>
+            <label>
+              Mensaje
+              <textarea rows="5" required placeholder="¿En qué podemos ayudarte?"></textarea>
+            </label>
+            <button class="btn" type="submit">Enviar mensaje</button>
+          </form>
+
+          <div class="map-card">
+            <h4>Horario</h4>
+            <p>Lun - Vie · 08:00 - 17:00</p>
+            <h4>Dirección</h4>
+            <p>Ciudad de Guatemala, Guatemala</p>
+            <div class="mini-map" aria-hidden="true">[Mapa / Placeholder]</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>© <strong>Fidén y Asociados</strong> — Todos los derechos reservados.</div>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal (usado por el formulario de búsqueda) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar">✕</button>
+      <h3>Resultados rápidos</h3>
+      <p id="modalText">Buscando...</p>
+      <div class="modal-actions">
+        <a class="btn" href="#servicios">Ver servicios</a>
+        <a class="btn btn-outline" href="#contacto">Contactar</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" aria-hidden="true"></div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
